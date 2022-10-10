@@ -24,10 +24,14 @@ This folder includes all the xml files for assembly and packaging of zip of the 
 
     cloud-functions
     | -- function_1
+            | -- cmd
+                 | -- main.go
             | -- function_1.go
             | -- ...
             | -- ...
     | -- function_2
+            | -- cmd
+                 | -- main.go
             | -- function_2.go
             | -- ...
             | -- ...
