@@ -42,10 +42,8 @@ jobs:
           files: |
             target/*.zip
 
-      - name: Uses POM Version Bump
-        uses: wlicamele-bw/pom-version-bump@main
-        with:
-          mainBranchName: GA
-          pomVersionTag: version
+      - name: Bump version
+        id: bump
+        uses: mickem/gh-action-bump-maven-version
 
 
