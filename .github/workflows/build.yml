@@ -36,7 +36,7 @@ jobs:
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          repo_token: $PAT
+          repo_token: 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
           automatic_release_tag: ${{ steps.pom-version.outputs.version }}
           prerelease: false
           files: |
