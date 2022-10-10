@@ -9,15 +9,15 @@ This is a sample project to try out a POC for cloud functions written in go depl
 
 This project has 3 folders
 
-**assembly** 
+**build** 
 
-    assembly
+    build
     | -- function_1.xml 
     | -- function_2.xml
     | -- ...
     | -- ...
 
-This folder includes all the xml files for assembly and packaging of zip of the individual cloud function
+This folder includes all the xml files for build and packaging of zip of the individual cloud function
 
 
 **cloud-function**
@@ -99,3 +99,14 @@ This command will
 6. build zips
 
 The final zips will be present in the target folder
+
+**Running the cloud function locally**
+
+Export the function name that you want to execute locally
+
+`export FUNCTION_TARGET=Function1`
+
+Go to the specific cloud function that you want to run locally. For Example
+
+    cd cloud-functions/function_1
+    go run cmd/main.go
