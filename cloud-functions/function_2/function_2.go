@@ -10,7 +10,7 @@ import (
 
 func init() {
 	logging.NewLogger("function_2")
-	functions.HTTP("function2", function2)
+	functions.HTTP("Function2", function2)
 }
 
 func function2(w http.ResponseWriter, r *http.Request) {
