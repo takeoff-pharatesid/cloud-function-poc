@@ -12,18 +12,9 @@
         <plugins>
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>create-zip</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                        <configuration>
-                            <descriptorSourceDirectory>assembly</descriptorSourceDirectory>
-                        </configuration>
-                    </execution>
-                </executions>
+                    <configuration>
+                        <descriptorSourceDirectory>assembly</descriptorSourceDirectory>
+                    </configuration>
             </plugin>
         </plugins>
     </build>
