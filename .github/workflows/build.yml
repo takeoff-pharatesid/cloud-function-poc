@@ -42,8 +42,10 @@ jobs:
           files: |
             target/*.zip
 
-      - name: Bump version
+      - name: Bump Version
         id: bump
-        uses: "mickem/gh-action-bump-maven-version@main"
+        uses: nnichols/maven-version-bump-action@v3
+        with:
+          github-token: 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
 
 
