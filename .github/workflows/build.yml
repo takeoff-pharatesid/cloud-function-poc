@@ -37,6 +37,7 @@ jobs:
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: $PAT
+          automatic_release_tag: ${{ steps.pom-version.outputs.version }}
           prerelease: false
           files: |
             target/*.zip
