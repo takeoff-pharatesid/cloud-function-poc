@@ -44,6 +44,6 @@ jobs:
 
       - name: Bump version
         id: bump
-        uses: "mickem/gh-action-bump-maven-version@latest"
+        uses: "mickem/gh-action-bump-maven-version@main"
 
 
