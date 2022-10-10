@@ -32,7 +32,7 @@ jobs:
 
       - name: get-pom-version
         id: pom-version
-        uses: CptMokoena/maven-get-version-action@master
+        uses: CptMokoena/maven-get-version-action@latest
 
       - name: release
         uses: meeDamian/github-release@2.0
@@ -44,6 +44,6 @@ jobs:
             target/
 
       - name: Uses POM Version Bump
-        uses: wlicamele-bw/pom-version-bump@v1.0
+        uses: wlicamele-bw/pom-version-bump@latest
 
 
