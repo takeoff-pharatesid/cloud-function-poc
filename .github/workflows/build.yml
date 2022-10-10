@@ -40,7 +40,7 @@ jobs:
           token: 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
           tag: ${{ steps.pom-version.outputs.version }}
           name: ${{ steps.pom-version.outputs.version }}
-          gzip: no
+          gzip: false
           files: >
             target/
 
