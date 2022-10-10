@@ -37,7 +37,7 @@ jobs:
       - name: release
         uses: meeDamian/github-release@2.0
         with:
-          token: $PAT
+          token: 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
           tag: v${{ steps.pom-version.outputs.version }}
           name: v${{ steps.pom-version.outputs.version }}
           files: >
