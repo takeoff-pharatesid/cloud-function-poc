@@ -30,4 +30,20 @@ jobs:
         shell: bash
         run: make build
 
+      - name: get-pom-version
+        id: pom-version
+        uses: CptMokoena/maven-get-version-action@master
+
+      - name: release
+        uses: meeDamian/github-release@2.0
+        with:
+          token: $PAT
+          tag: v${{ steps.pom-version.outputs.version }}
+          name: v${{ steps.pom-version.outputs.version }}
+          files: >
+            target/
+
+      - name: Uses POM Version Bump
+        uses: wlicamele-bw/pom-version-bump@v1.0
+
 
