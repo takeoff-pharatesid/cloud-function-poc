@@ -34,15 +34,12 @@ jobs:
         id: pom-version
         uses: CptMokoena/maven-get-version-action@main
 
-      - name: release
-        uses: meeDamian/github-release@2.0
+      - uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          token: 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
-          tag: ${{ steps.pom-version.outputs.version }}
-          name: ${{ steps.pom-version.outputs.version }}
-          gzip: false
-          files: >
-            target/
+          repo_token: $PAT
+          prerelease: false
+          files: |
+            target/*.zip
 
       - name: Uses POM Version Bump
         uses: wlicamele-bw/pom-version-bump@main
