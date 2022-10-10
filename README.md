@@ -32,7 +32,8 @@ This folder includes all the xml files for assembly and packaging of zip of the 
             | -- ...
             | -- ...
 
-This folder contains actual source code per cloud function
+This folder contains actual source code per cloud function.
+Every cloud function folder contains cmd folder, this is just for local testing and won't be included in the final zip. 
 
 **common**
 
