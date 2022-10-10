@@ -21,4 +21,4 @@ test:
 
 .PHONY: build
 build: clean test
-	mvn clean install
+	mvn clean assembly:single
