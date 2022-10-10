@@ -38,8 +38,9 @@ jobs:
         uses: meeDamian/github-release@2.0
         with:
           token: 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
-          tag: v${{ steps.pom-version.outputs.version }}
-          name: v${{ steps.pom-version.outputs.version }}
+          tag: ${{ steps.pom-version.outputs.version }}
+          name: ${{ steps.pom-version.outputs.version }}
+          gzip: no
           files: >
             target/
 
