@@ -14,6 +14,7 @@
                 <artifactId>maven-assembly-plugin</artifactId>
                     <configuration>
                         <descriptorSourceDirectory>build</descriptorSourceDirectory>
+                        <finalName>${name}</finalName>
                     </configuration>
             </plugin>
         </plugins>
