@@ -12,6 +12,7 @@ import (
 func main() {
 	// Use PORT environment variable, or default to 8080.
 	port := "8080"
+	os.Setenv("FUNCTION_TARGET", "Function2")
 	if envPort := os.Getenv("PORT"); envPort != "" {
 		port = envPort
 	}

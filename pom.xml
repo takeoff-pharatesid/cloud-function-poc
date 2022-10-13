@@ -3,18 +3,25 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.takeoff</groupId>
-    <artifactId>GCF_TEMPLATE</artifactId>
+    <groupId>com.pharatesid</groupId>
+    <artifactId>gcf-template</artifactId>
     <version>1.0.0</version>
-    <name>GCF_TEMPLATE</name>
+    <name>gcf-template</name>
     <packaging>pom</packaging>
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub takeoff-pharatesid Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/takeoff-pharatesid/cloud-function-poc</url>
+        </repository>
+    </distributionManagement>
     <build>
         <plugins>
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
                     <configuration>
                         <descriptorSourceDirectory>build</descriptorSourceDirectory>
-                        <finalName>${name}</finalName>
+                        <finalName>${project.name}</finalName>
                     </configuration>
             </plugin>
         </plugins>
